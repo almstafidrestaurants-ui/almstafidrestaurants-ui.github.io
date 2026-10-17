@@ -266,11 +266,11 @@
       letter-spacing: 1.3px;
       color: #cceeff;
     }
-    .project-info { padding: 26px; }
+    .project-info { padding: 26px; display: flex; flex-direction: column; align-items: flex-start; min-height: 235px; }
     .project-type { color: var(--cyan); font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
     .project-info h3 { font-size: 24px; letter-spacing: -.4px; margin: 9px 0 10px; }
-    .project-info p { font-size: 14px; color: var(--muted); margin: 0 0 25px; }
-    .project-link { width: 100%; }
+    .project-info p { font-size: 14px; color: var(--muted); margin: 0 0 25px; flex: 1; }
+    .project-link { width: 100%; margin-top: auto; }
     .coming-soon { margin: 32px 0 0; text-align: center; font-size: 13px; color: #91accb; }
 
     /* Contact */
@@ -368,23 +368,135 @@
           </div>
 
           <div class="project-grid">
-            <!-- Duplicate this article to add another client website. -->
+            <!-- Client Project 01: Jabal Amel Roastery -->
             <article class="project-card">
               <div class="project-visual" aria-hidden="true">
                 <span class="project-number">01 / CLIENT PROJECT</span>
                 <div class="project-symbol">☕</div>
               </div>
               <div class="project-info">
-                <span class="project-type">Client Website</span>
+                <span class="project-type">Coffee &amp; Specialty Products</span>
                 <h3>Jabal Amel Roastery</h3>
                 <p>Explore coffee, nuts, spices, and specialty products through a simple, modern online experience.</p>
-                <a class="btn btn-primary project-link" href="/Jabal-Amel-Roastery/" target="_blank" rel="noopener noreferrer">
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/Jabal-Amel-Roastery/" target="_blank" rel="noopener noreferrer" aria-label="Visit Jabal Amel Roastery website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 02: Brew Street -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">02 / CLIENT PROJECT</span>
+                <div class="project-symbol">🥤</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Coffee Shop · Digital Menu</span>
+                <h3>Brew Street</h3>
+                <p>Browse a café menu of hot and cold drinks, frappuccinos, milkshakes, and refreshments.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/DREW-STREET/" target="_blank" rel="noopener noreferrer" aria-label="Visit Brew Street website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 03: Sip Coffee -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">03 / CLIENT PROJECT</span>
+                <div class="project-symbol">🧋</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Coffee Shop · Digital Menu</span>
+                <h3>Sip Coffee</h3>
+                <p>Discover coffee, specialty drinks, smoothies, desserts, and more in an easy-to-browse digital menu.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/MENU_/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sip Coffee website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 04: GM Coffee Shop -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">04 / CLIENT PROJECT</span>
+                <div class="project-symbol">☕</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Coffee Shop Website</span>
+                <h3>GM Coffee Shop</h3>
+                <p>A modern website showcasing the GM Coffee Shop brand and its offerings.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/GEE-M-Coffee/" target="_blank" rel="noopener noreferrer" aria-label="Visit GM Coffee Shop website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 05: D.one Coffee -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">05 / CLIENT PROJECT</span>
+                <div class="project-symbol">🍨</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Café · Digital Menu</span>
+                <h3>D.one Coffee</h3>
+                <p>Explore a digital café menu featuring coffee, ice cream, milkshakes, snacks, and more.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/D.one--Coffee/" target="_blank" rel="noopener noreferrer" aria-label="Visit D.one Coffee website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 06: Amir Beirut -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">06 / CLIENT PROJECT</span>
+                <div class="project-symbol">🍽️</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Restaurant &amp; Café</span>
+                <h3>Amir Beirut</h3>
+                <p>Discover an elegant restaurant menu with appetizers, main courses, desserts, and drinks.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/--Amir-Beirut/" target="_blank" rel="noopener noreferrer" aria-label="Visit Amir Beirut website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 07: Jalal Co -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">07 / CLIENT PROJECT</span>
+                <div class="project-symbol">🍔</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Fast Food · Digital Menu</span>
+                <h3>Jalal Co</h3>
+                <p>A convenient fast-food menu featuring sandwiches, burgers, sides, and drinks.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/Jalal-Co/" target="_blank" rel="noopener noreferrer" aria-label="Visit Jalal Co website (opens in a new tab)">
+                  Visit Website <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Client Project 08: TASTE -->
+            <article class="project-card">
+              <div class="project-visual" aria-hidden="true">
+                <span class="project-number">08 / CLIENT PROJECT</span>
+                <div class="project-symbol">🍴</div>
+              </div>
+              <div class="project-info">
+                <span class="project-type">Client Website</span>
+                <h3>TASTE</h3>
+                <p>A custom-branded website created to showcase the TASTE experience.</p>
+                <a class="btn btn-primary project-link" href="https://almstafidrestaurants-ui.github.io/TASTE/" target="_blank" rel="noopener noreferrer" aria-label="Visit TASTE website (opens in a new tab)">
                   Visit Website <span class="arrow" aria-hidden="true">↗</span>
                 </a>
               </div>
             </article>
           </div>
-          <p class="coming-soon">More client projects are coming soon.</p>
+<p class="coming-soon">More client projects will be featured here as we build them.</p>
         </div>
       </section>
 
