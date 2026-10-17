@@ -1,91 +1,361 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>المستفيد | مواقعنا الإلكترونية</title>
+  <title>Almustafid | مواقعنا الإلكترونية</title>
+  <meta name="description" content="اكتشف المواقع الإلكترونية التي طورتها وأديرها Almustafid للحلول البرمجية والرقمية.">
+  <meta name="theme-color" content="#06152f">
 
-    <!-- Google AdSense -->
-    <script async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5526858631585731"
-      crossorigin="anonymous"></script>
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5526858631585731"
+    crossorigin="anonymous"></script>
 
-    <style>
-        * { box-sizing: border-box; }
+  <style>
+    :root {
+      --bg: #06152f;
+      --surface: rgba(13, 39, 76, 0.88);
+      --blue: #0788ff;
+      --cyan: #37d5ff;
+      --text: #f4f8ff;
+      --muted: #a7bad5;
+      --border: rgba(55, 213, 255, 0.32);
+    }
 
-        body {
-            font-family: Tahoma, Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fb;
-            color: #243047;
-            text-align: center;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        header {
-            background: #122c48;
-            color: white;
-            padding: 55px 20px;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        h1 { margin: 0 0 15px; }
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background:
+        radial-gradient(ellipse at 50% 0%, #103d77 0%, transparent 48%),
+        var(--bg);
+      color: var(--text);
+      text-align: center;
+      min-height: 100vh;
+      line-height: 1.8;
+    }
 
-        main {
-            max-width: 900px;
-            margin: 45px auto;
-            padding: 0 20px;
-        }
+    a {
+      color: inherit;
+    }
 
-        .project {
-            background: white;
-            padding: 30px;
-            margin: 25px auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 18px #00000010;
-        }
+    .container {
+      width: min(1080px, calc(100% - 36px));
+      margin-inline: auto;
+    }
 
-        .project a {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 25px;
-            color: white;
-            background: #1768b3;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+    header {
+      padding: 64px 20px 48px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(
+        180deg,
+        rgba(5, 28, 62, 0.25),
+        rgba(6, 21, 47, 0.05)
+      );
+    }
 
-        footer {
-            padding: 25px;
-            color: #667085;
-        }
-    </style>
+    .brand-mark {
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 4px solid var(--cyan);
+      background: #fff;
+      color: #09284c;
+      font-size: 46px;
+      font-weight: 900;
+      box-shadow: 0 0 32px rgba(0, 153, 255, 0.25);
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: clamp(32px, 6vw, 48px);
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .brand-subtitle {
+      color: var(--cyan);
+      margin: 4px 0 25px;
+      font-size: 15px;
+    }
+
+    .hero-line {
+      width: 150px;
+      height: 3px;
+      background: var(--cyan);
+      margin: 25px auto;
+      border-radius: 5px;
+      box-shadow: 0 0 14px #0788ff70;
+    }
+
+    .hero-title {
+      font-size: clamp(24px, 4vw, 34px);
+      margin: 0 0 10px;
+    }
+
+    .hero-description {
+      color: var(--muted);
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px 22px;
+      margin-top: 24px;
+      color: #7ddfff;
+      font-size: 14px;
+    }
+
+    .services span::before {
+      content: "✦";
+      color: var(--cyan);
+      margin-left: 7px;
+    }
+
+    main {
+      padding-top: 48px;
+      padding-bottom: 65px;
+    }
+
+    .section-heading {
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 4vw, 32px);
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+      gap: 22px;
+      text-align: right;
+    }
+
+    .project {
+      position: relative;
+      overflow: hidden;
+      padding: 27px;
+      border-radius: 20px;
+      background: linear-gradient(
+        145deg,
+        rgba(17, 52, 96, 0.96),
+        rgba(8, 28, 58, 0.96)
+      );
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
+      transition: transform 0.25s ease, border-color 0.25s ease,
+                  box-shadow 0.25s ease;
+    }
+
+    .project::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--cyan));
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      border-color: var(--cyan);
+      box-shadow: 0 18px 38px rgba(0, 136, 255, 0.12);
+    }
+
+    .project-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(7, 136, 255, 0.14);
+      border: 1px solid var(--border);
+      font-size: 30px;
+      margin-bottom: 17px;
+    }
+
+    .project h3 {
+      margin: 0 0 9px;
+      font-size: 21px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 22px;
+      min-height: 52px;
+    }
+
+    .project-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 49px;
+      border: 1px solid var(--cyan);
+      border-radius: 12px;
+      background: linear-gradient(110deg, #0879ed, #0752b5);
+      color: #fff;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+      transition: filter 0.2s ease, transform 0.2s ease;
+    }
+
+    .project-link:hover {
+      filter: brightness(1.15);
+    }
+
+    .project-link:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+    }
+
+    .visit-arrow {
+      font-size: 20px;
+    }
+
+    .empty-note {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 28px 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      background: rgba(2, 12, 29, 0.4);
+    }
+
+    footer strong {
+      color: #d8f5ff;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding-top: 45px;
+      }
+
+      .brand-mark {
+        width: 94px;
+        height: 94px;
+        font-size: 38px;
+      }
+
+      .project {
+        padding: 23px;
+      }
+
+      .project p {
+        min-height: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>المستفيد</h1>
-        <p>مواقع إلكترونية وحلول رقمية للأعمال</p>
-    </header>
+  <header>
+    <div class="brand-mark" aria-label="Almustafid">A</div>
 
-    <main>
-        <h2>مواقعنا الإلكترونية</h2>
+    <h1 class="brand-name">Almustafid</h1>
+    <p class="brand-subtitle">Software &amp; Digital Solutions</p>
 
-        <div class="project">
-            <h3>محمصة جبل عامل</h3>
-            <p>
-                تصفح منتجات القهوة والمكسرات والبهارات
-                عبر الموقع الإلكتروني.
-            </p>
+    <div class="hero-line"></div>
 
-            <a href="/Jabal-Amel-Roastery/">
-                زيارة الموقع
-            </a>
-        </div>
-    </main>
+    <h2 class="hero-title">المواقع التي أنشأناها</h2>
+    <p class="hero-description">
+      نطوّر مواقع إلكترونية وحلولًا رقمية تساعد الأعمال على النمو
+      وتقديم خدماتها بصورة عصرية واحترافية.
+    </p>
 
-    <footer>
-        جميع الحقوق محفوظة - المستفيد
-    </footer>
+    <div class="services">
+      <span>البرمجة</span>
+      <span>الحلول الرقمية</span>
+      <span>تطوير المواقع</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="section-heading">
+      <h2>استكشف مشاريعنا</h2>
+      <p>اختر الموقع الذي تريد زيارته من مشاريعنا الإلكترونية.</p>
+    </div>
+
+    <section class="project-grid" aria-label="المواقع الإلكترونية">
+
+      <!-- يمكنك نسخ بطاقة المشروع لإضافة موقع جديد -->
+      <article class="project">
+        <div class="project-icon" aria-hidden="true">☕</div>
+
+        <h3>محمصة جبل عامل</h3>
+
+        <p>
+          تصفح منتجات القهوة والمكسرات والبهارات
+          عبر تجربة إلكترونية سهلة ومميزة.
+        </p>
+
+        <a class="project-link" href="/Jabal-Amel-Roastery/">
+          <span>زيارة الموقع</span>
+          <span class="visit-arrow" aria-hidden="true">←</span>
+        </a>
+      </article>
+
+      <!-- أضف بطاقات مواقعك الأخرى هنا -->
+
+    </section>
+
+    <p class="empty-note">
+      المزيد من المشاريع سيُضاف قريبًا.
+    </p>
+  </main>
+
+  <footer>
+    <div>جميع الحقوق محفوظة © <span id="year"></span>
+      <strong>Almustafid</strong>
+    </div>
+    <div>Software &amp; Digital Solutions</div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
 </html>
